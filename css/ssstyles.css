@@ -1,0 +1,365 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D0D0D0;
+    color: #000;
+    line-height: 1.6;
+}
+
+h1, h2, .logo, th, .special-text {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h3, .time {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clear { clear: both; }
+
+.p5-red { color: #DC143C; }
+.p5-gold { color: #FFD700; }
+.white-t { color: #fff; }
+
+/* COLUMNAS */
+.col-1-2 { width: 48%; margin-right: 2%; float: left; }
+.col-1-3 { width: 31%; margin: 0 1.16%; float: left; }
+.align-right { text-align: right; }
+
+/* FONDOS */
+.halftone-bg {
+    background-color: #D0D0D0;
+    background-image: radial-gradient(#dc143c 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.gray-halftone-bg {
+    background-color: #F0F0F0;
+    background-image: radial-gradient(#ccc 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.white-halftone-bg {
+    background-color: #FFFFFF;
+    background-image: radial-gradient(#eee 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.black-halftone-bg {
+    background-color: #DC143C;
+    color: white;
+    background-image: radial-gradient(#d0d0d0 1px, transparent 1px);
+    background-size: 10px 10px;
+
+}
+
+/* TITULOS */
+.special-text {
+    font-size: 80px;
+    letter-spacing: -2px;
+    color: black;
+    transform: skewX(-5deg);
+    position: relative;
+    display: table;
+    margin: 0 auto 50px auto;
+}
+
+.special-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #FFFFFF, #FFEB3B, #DC143C);
+    bottom: 5px;
+    left: 0;
+}
+
+.section { padding: 100px 0; }
+
+/* NAVBAR */
+#navbar {
+    background: #000;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid #DC143C;
+}
+
+.logo { float: left; font-size: 32px; color: white; }
+
+.nav-links {
+    float: right;
+    list-style: none;
+    margin-top: 8px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 750px;
+    padding-top: 170px;
+    border-bottom: 20px solid black;
+    position: relative;
+    overflow: hidden;
+
+    background-image: url('../imagenes/PersonaAllAttack.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* OVERLAY OSCURO */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* CAPAS ENCIMA */
+.hero-left, .hero-right {
+    position: relative;
+    z-index: 2;
+}
+
+.p5-top-cutout {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background: black;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+}
+
+.hero-left { width: 55%; float: left; }
+.hero-right { width: 40%; float: right; }
+
+/* TITULO PRINCIPAL */
+.p30-title {
+    font-size: 100px;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    color: white;
+    text-shadow: 10px 10px 0 black;
+}
+
+.bg-black { background: black; padding: 0 10px; }
+.p5-strike { background: #DC143C; padding: 0 15px; color: white; }
+
+/* DETALLES */
+.hero-details { margin-top: 30px; }
+.hero-details .date { font-size: 30px; font-weight: bold; }
+.hero-details .price { font-size: 20px; margin-top: 10px; }
+
+/* BOTÓN */
+.p5-btn {
+    display: inline-block;
+    background: #DC143C;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    margin-top: 40px;
+    border: 5px solid black;
+    box-shadow: 10px 10px 0 black;
+    transform: rotate(-3deg);
+}
+
+.p5-btn:hover {
+    box-shadow: 0 0 0 white;
+    background: #FFD700;
+    color: black;
+}
+
+/* IMAGEN PRINCIPAL */
+.tv-frame {
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    width: 500px;
+    transform: rotate(3deg);
+}
+
+.p5-main-img {
+    width: 100%;
+    border: 10px solid black;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.frame-shadow {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* CARDS */
+.p5-card-long {
+    background: #FFFFFF;
+    padding: 40px;
+    border: 5px solid black;
+    box-shadow: 15px 15px 0 black;
+    margin-top: 20px;
+}
+
+.card-left { width: 65%; float: left; }
+.card-right { width: 30%; float: right; border: 5px solid black; }
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen base */
+.img-container img {
+    width: 100%;
+    display: block;
+}
+
+/* Imagen overlay desde CSS */
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../imagenes/letslarpTETO.jfif");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0;
+    transition: 0.4s;
+}
+
+/* HOVER */
+.img-container:hover::after {
+    opacity: 0.7;
+}
+
+.p5-h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transform: skewX(-5deg);
+}
+
+/* ACTIVIDADES */
+.p5-card-activity {
+    background: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid black;
+    height: 380px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-bottom: 3px solid black;
+    margin-bottom: 15px;
+}
+
+.p5-card-activity h3 {
+    font-size: 24px;
+    color: #DC143C;
+}
+
+.alternative-card {
+    background: #FFD700;
+}
+
+/* TABLA */
+.p5-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: black;
+    color: white;
+    border: 10px solid black;
+}
+
+.p5-table th {
+    background: #DC143C;
+    padding: 20px;
+    font-size: 26px;
+    text-align: left;
+}
+
+.p5-table td {
+    padding: 15px;
+    border-bottom: 2px solid #333;
+}
+
+.p5-table .time {
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFD700;
+}
+
+.p5-row-highlight {
+    background: #1a1a1a;
+}
+
+/* MAPA */
+.p5-map-frame {
+    border: 15px solid black;
+}
+
+/* FOOTER */
+#footer {
+    background: #000;
+    color: white;
+    padding: 80px 0 50px 0;
+    position: relative;
+}
+
+.p5-bottom-cutout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: black;
+    transform: skewY(1deg);
+}
+
+.socials {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+}
