@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets - Anime Fest LPZ</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registrostyle.css">
+
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+
+        .tickets-container {
+            width: 1000px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        /* GIF IZQUIERDO */
+        .gif-left {
+            width: 150px;
+            float: left;
+        }
+
+        /* GIF DERECHO */
+        .gif-right {
+            width: 150px;
+            float: right;
+        }
+
+        .gif-left img,
+        .gif-right img {
+            width: 100%;
+        }
+
+        /* CONTENIDO CENTRAL */
+        .tickets-content {
+            width: 680px;
+            margin: 0 auto;
+            background: white;
+            color: black;
+            padding: 40px;
+            border: 5px solid black;
+            box-shadow: 15px 15px 0 #DC143C;
+        }
+
+        .tickets-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 70px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ticket-box {
+            border: 3px solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ticket-box h3 {
+            color: #DC143C;
+            font-size: 28px;
+        }
+
+        .ticket-box p {
+            margin-top: 10px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: #DC143C;
+            color: white;
+            text-decoration: none;
+            font-family: 'Bebas Neue';
+            border: 3px solid black;
+        }
+
+        .buy-btn:hover {
+            background: #FFD700;
+            color: black;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="tickets-container">
+
+    <div class="gif-left">
+        <img src="../imagenes/Tetoplushspin.gif" alt="">
+    </div>
+
+    <div class="gif-right">
+        <img src="../imagenes/Tetoplushspin.gif" alt="">
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="tickets-content">
+
+        <h1 class="tickets-title">TICKETS 2026</h1>
+
+        <div class="ticket-box">
+            <h3>ENTRADA GENERAL</h3>
+            <p><h2>Acceso a todas las actividades principales.</h2></p>
+            <p><strong><h3>35 Bs</h3></strong></p>
+            <a href="#" class="buy-btn"><h2>COMPRAR</h2></a>
+        </div>
+
+        <div class="ticket-box">
+            <h3>ENTRADA VIP</h3>
+            <p><h2>Acceso completo + zona exclusiva + firma de invitados.</h2></p>
+            <p><strong><h3>100 Bs</h3></strong></p>
+            <a href="#" class="buy-btn"><h2>COMPRAR</h2></a>
+        </div>
+
+    </div>
+    <section class="register-section">
+
+        <h2 class="register-title">Registro</h2>
+
+        <form class="register-form">
+
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo">
+
+            <button type="submit" class="register-btn">Enviar Registro</button>
+
+        </form>
+    </section>
+
+</div>
+    <div class="clear"></div>
+
+</div>
+
+</body>
+</html>
